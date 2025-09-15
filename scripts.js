@@ -59,11 +59,11 @@ function resetGame() {
   matchedPairs = 0;
 
   cards.forEach(card => {
-    card.classList.remove('flip');       // ✅ unflip all cards
+    card.classList.remove('flip');     
     card.addEventListener('click', flipCard);
   });
 
-  // ✅ shuffle after reset
+ 
   setTimeout(() => shuffle(), 500);
 }
 
